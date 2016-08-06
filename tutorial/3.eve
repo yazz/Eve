@@ -1,0 +1,16 @@
+The most basic Eve program
+```
+    match
+        [#a_number value]
+    bind
+        [#div text: "hello world {{value}}"]
+```
+
+
+Set up the initial values (See, the order of the blocks of code does not matter as
+now this is after the code to display the value)
+```
+    bind
+        [#a_number value: 2]
+```
+

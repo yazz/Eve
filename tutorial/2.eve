@@ -1,0 +1,14 @@
+Set up the initial values
+```
+    bind
+        [#a_number value: 1]
+```
+
+
+The most basic Eve program
+```
+    match
+        [#a_number value]
+    bind
+        [#div text: "hello world {{value}}"]
+```

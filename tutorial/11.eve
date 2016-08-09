@@ -1,0 +1,5 @@
+Ok, lets do something simple. Show a number on the screen
+```
+  bind
+    [#div text: 1]
+```

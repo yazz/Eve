@@ -1,0 +1,24 @@
+Add a button to the web page
+```
+  match
+    [#number value]
+  bind
+    [#div text: value]
+    [#button #count-button style: "width: 50px;" class: "button" text: "+"]
+```
+
+
+
+
+Then lets read that value shown on the screen from a variable
+```
+  match
+    [#session-connect]
+  commit
+    [#number value: 2]
+```
+
+
+
+
+

@@ -1,0 +1,33 @@
+When the button is pressed then increment the counter. This works because any element that is clicked generates a [#click] record
+```
+  match
+    [#click element: [#count-button]]
+    number = [#number]
+  commit
+    number.value := number.value + 1
+```
+
+
+
+
+Set the counter to 1 initially
+```
+  match
+    [#session-connect]
+  commit
+    [#number value: 1]
+```
+
+
+
+Add a button to the web page
+```
+  match
+    [#number value]
+  bind
+    [#div text: value]
+    [#button #count-button style: "width: 50px;" class: "button" text: "+"]
+```
+
+
+

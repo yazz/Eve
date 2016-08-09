@@ -1,6 +1,8 @@
-Set up some people and their ages
+Set up some people and their ages. In this case we use [#session-connect] which is created when the session starts and commit to initialise the data
 ```
-  bind
+  match
+    [#session-connect]
+  commit
     [#person name: "John"    age:  10]
     [#person name: "Peter"   age:  17]
     [#person name: "Paul"    age:  24]

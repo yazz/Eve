@@ -1,0 +1,22 @@
+Then lets read that value shown on the screen from a variable
+```
+  match
+    [#session-connect]
+  commit
+    [#number value: 2]
+```
+
+
+
+Show the number on the screen
+```
+  match
+    [#number value]
+  bind
+    [#div text: value]
+```
+
+
+
+
+

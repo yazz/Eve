@@ -1,0 +1,19 @@
+draw a simple digital clock. This shows that Eve has a built in ticking clock which
+creates new #time records every second
+```
+  match
+    [#time hours minutes seconds]
+  bind
+    [#div text: "{{hours}}:{{minutes}}:{{seconds}}"]
+```
+
+
+
+draw a simple digital clock AGAIN! This shows that Eve code can be duplicated and still
+perfectly valid!
+```
+  match
+    [#time hours minutes seconds]
+  bind
+    [#div text: "{{hours}}:{{minutes}}:{{seconds}}"]
+```

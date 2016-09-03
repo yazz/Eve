@@ -1,5 +1,4 @@
-But now I would like to go back to something that confused me before, in Exercise 7, when we tried
-to show all of the people and their ages
+But there is a solution!
 ```
     bind
         [#person name: "John"    age:  10]

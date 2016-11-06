@@ -1,5 +1,6 @@
 Ok, lets do something simple. Show a number on the screen
+
 ```
-  bind
+bind @browser
     [#div text: 1]
 ```

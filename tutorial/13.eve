@@ -1,24 +1,16 @@
 Add a button to the web page
+
 ```
-  match
+search
     [#number value]
-  bind
+bind @browser
     [#div text: value]
     [#button #count-button style: "width: 50px;" class: "button" text: "+"]
 ```
 
 
-
-
-Then lets read that value shown on the screen from a variable
+Initialize a value
 ```
-  match
-    [#session-connect]
-  commit
+commit
     [#number value: 2]
 ```
-
-
-
-
-

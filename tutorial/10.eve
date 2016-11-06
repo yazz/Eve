@@ -1,8 +1,8 @@
-Set up some people and their ages. In this case we use [#session-connect] which is created when the session starts and commit to initialise the data
+Set up some people and their ages.
+
+
 ```
-  match
-    [#session-connect]
-  commit
+commit
     [#person name: "John"    age:  10]
     [#person name: "Peter"   age:  17]
     [#person name: "Paul"    age:  24]
@@ -10,18 +10,11 @@ Set up some people and their ages. In this case we use [#session-connect] which 
 ```
 
 
-
-
-
-
-
-
-
 Show  all of the people and their ages in a table
 ```
-  match
+search
     [#person name  age]
-  bind
+bind @browser
     [#div children:
       [#div style: "display: inline-block; width: 100px; text-decoration: underline;" text: "Name"]
       [#div style: "display: inline; width: 100px; text-decoration: underline;" text: "Age"]
@@ -50,10 +43,3 @@ parent = [#show-person]
                          [#div style: "display: inline-block; width: 100px;" text: "{{age}} years old"]
                        ]
 ```
-
-
-
-
-
-
-

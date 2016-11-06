@@ -1,7 +1,8 @@
 But now I would like to go back to something that confused me before, in Exercise 7, when we tried
 to show all of the people and their ages
+
 ```
-    bind
+commit
         [#person name: "John"    age:  10]
         [#person name: "Peter"   age:  17]
         [#person name: "Paul"    age:  24]
@@ -9,12 +10,11 @@ to show all of the people and their ages
 ```
 
 
-
 This code was supposed to show the people and their ages next to it, but it didn't work
 ```
-    match
+search
         [#person name  age]
-    bind
+bind @browser
         [#div children:
                 [#div style: "display: inline-block" text: "{{name}}"]
                 [#div style: "display: block" text: "{{age}} years old"]

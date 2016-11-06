@@ -1,6 +1,6 @@
 Set up some people and their ages
 ```
-    bind
+commit
         [#person name: "John"    age:  10]
         [#person name: "Peter"   age:  17]
         [#person name: "Paul"    age:  24]
@@ -14,9 +14,9 @@ the children property of a Html DIV. Note that this does not work as expected...
 
 Try it and see!
 ```
-    match
+search
         [#person name  age]
-    bind
+bind @browser
         [#div children:
                 [#div style: "display: inline-block" text: "{{name}}"]
                 [#div style: "display: block" text: "{{age}} years old"]

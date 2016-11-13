@@ -14,7 +14,7 @@ parent = [#show-person]
 
 : which links this HTML child to the parent
 ```
-search
+search @browser @session
         parent = [#show-person]
         id     = [#person name  age]
 bind @browser
@@ -25,15 +25,9 @@ bind @browser
 ```
 
 
-
-
-
-
 Lets try this again. this time you will see that we add a tag #show-person to the div which will set
 the ID for this main HTML element
 ```
-    match
-        [#person name  age]
-    bind
+bind @browser
         [#div #show-person]
 ```

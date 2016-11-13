@@ -28,7 +28,7 @@ parent = [#show-person]
 
 : which links this HTML child to the parent
 ```
-search
+search @browser @session
     parent = [#show-person]
     id     = [#person name  age]
 bind @browser

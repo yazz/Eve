@@ -23,21 +23,16 @@ bind @browser
 ```
 
 
-
-
-
-
-
 Show the HTML for a single person. Link to the main HTML table by using:
 
 parent = [#show-person]
 
 : which links this HTML child to the parent
 ```
-  match
+search @browser @session
     parent = [#show-person]
     id     = [#person name  age]
-  bind
+bind @browser
     parent.children += [#div id,  children:
                          [#div style: "display: inline-block; width: 100px;" text: "{{name}}"]
                          [#div style: "display: inline-block; width: 100px;" text: "{{age}} years old"]

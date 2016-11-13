@@ -1,7 +1,7 @@
 Add a button to the web page
 
 ```
-search
+search 
     [#number value]
 bind @browser
     [#div text: value]

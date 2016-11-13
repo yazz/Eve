@@ -1,22 +1,15 @@
 Then lets read that value shown on the screen from a variable
+
 ```
-  match
-    [#session-connect]
-  commit
+commit
     [#number value: 2]
 ```
 
 
-
 Show the number on the screen
 ```
-  match
+search
     [#number value]
-  bind
+bind @browser
     [#div text: value]
 ```
-
-
-
-
-

@@ -1,16 +1,14 @@
 Set up someone to say hello to
 ```
-    bind
-        [#person name: "Chris"]
+commit
+    [#person name: "Chris"]
 ```
-
-
 
 Say hello to them
-```
-    match
-        [#person name]
-    bind
-        [#div text: "hello {{name}}"]
-```
 
+```
+search
+    [#person name]
+bind @browser
+    [#div text: "hello {{name}}"]
+```

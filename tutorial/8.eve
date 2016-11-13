@@ -1,17 +1,11 @@
 Set up some people and their ages
 ```
-    bind
+commit
         [#person name: "John"    age:  10]
         [#person name: "Peter"   age:  17]
         [#person name: "Paul"    age:  24]
         [#person name: "Eddy"    age:  44]
 ```
-
-
-
-
-
-
 
 
 Show the HTML for a single person. Link to the person by using:
@@ -20,10 +14,10 @@ parent = [#show-person]
 
 : which links this HTML child to the parent
 ```
-    match
+search @browser @session
         parent = [#show-person]
         id     = [#person name  age]
-    bind
+bind @browser
         parent.children += [#div id,  children:
                                [#div style: "display: inline-block; width: 100px;" text: "{{name}}"]
                                [#div style: "display: inline-block; width: 100px;" text: "{{age}} years old"]
@@ -31,16 +25,9 @@ parent = [#show-person]
 ```
 
 
-
-
-
-
 Lets try this again. this time you will see that we add a tag #show-person to the div which will set
 the ID for this main HTML element
 ```
-    match
-        [#person name  age]
-    bind
+bind @browser
         [#div #show-person]
 ```
-

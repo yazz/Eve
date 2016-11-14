@@ -1,18 +1,19 @@
 Set up some people and their ages
+
 ```
-    bind
-        [#person name: "John"    age:  10]
-        [#person name: "Peter"   age:  17]
-        [#person name: "Paul"    age:  24]
-        [#person name: "Eddy"    age:  44]
+commit
+    [#person name: "John"    age:  10]
+    [#person name: "Peter"   age:  17]
+    [#person name: "Paul"    age:  24]
+    [#person name: "Eddy"    age:  44]
 ```
 
 
 
 Show the people and their ages
 ```
-    match
+search
         [#person name  age]
-    bind
+bind @browser
         [#div text: "{{name}}, {{age}} years old"]
 ```

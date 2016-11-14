@@ -1,5 +1,6 @@
 The most basic Eve program
+
 ```
-    bind
-        [#div text: "hello world"]
+bind @browser
+   [#div text: "hello world"]
 ```
